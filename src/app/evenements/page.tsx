@@ -1,11 +1,14 @@
-import Breadcrumb from "@/components/Common/Breadcrumb";
+import Footer from "@/components/LayoutEN/Footer";
+import Header from "@/components/LayoutEN/Header";
+import ScrollToTop from "@/components/LayoutEN/ScrollToTop";
+import Breadcrumb from "@/components/LayoutEN/Common/Breadcrumb";
 
 import { Metadata } from "next";
-import Events from "@/components/Events";
+import Events from "@/components/LayoutEN/Events";
 
 export const metadata: Metadata = {
-  title: "Evénement | DATALYS Consulting",
-  description: "La page d'événement de DATALYS Consulting",
+  title: "Events | DATALYS Consulting",
+  description: "DATALYS Consulting event page",
   // other metadata
 };
 
@@ -13,8 +16,8 @@ const Page = () => {
   return (
     <>
       <Breadcrumb
-        pageName="Evénement"
-        description="Infrastructure et analyse des données. Envisager de manière synergique des catalyseurs de changement ayant un impact sur les infrastructures flexibles."
+        pageName="Events"
+        description="Data infrastructure and analysis. Synergistically consider catalysts for change with an impact on flexible infrastructures."
       />
       <Events />
     </>

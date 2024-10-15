@@ -1,7 +1,10 @@
-import DomainSection from "@/components/DomainSection";
-import AboutAudit from "@/components/AboutAudit";
-import RayonIntervention from "@/components/RayonIntervention";
-import Breadcrumb from "@/components/Common/Breadcrumb";
+import Footer from "@/components/LayoutEN/Footer";
+import Header from "@/components/LayoutEN/Header";
+import ScrollToTop from "@/components/LayoutEN/ScrollToTop";
+import DomainSection from "@/components/LayoutEN/DomainSection";
+import AboutAudit from "@/components/LayoutEN/AboutAudit";
+import RayonIntervention from "@/components/LayoutEN/RayonIntervention";
+import Breadcrumb from "@/components/LayoutEN/Common/Breadcrumb";
 
 import { Metadata } from "next";
 
@@ -16,7 +19,7 @@ const AboutPage = () => {
     <>
       <Breadcrumb
         pageName="Audit"
-        description="Infrastructure et analyse des données. Envisager de manière synergique des catalyseurs de changement ayant un impact sur les infrastructures flexibles."
+        description="Data infrastructure and analysis. Synergistically consider catalysts for change with an impact on flexible infrastructures."
       />
       <AboutAudit />
       <DomainSection />

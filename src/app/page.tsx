@@ -1,31 +1,33 @@
-import AboutSectionOne from "@/components/About/AboutSectionOne";
-import AboutSectionTwo from "@/components/About/AboutSectionTwo";
-import OurWorks from "@/components/OurWorks";
-import Brands from "@/components/Brands";
-import ScrollUp from "@/components/Common/ScrollUp";
-import ContactHome from "@/components/ContactHome";
-import Features from "@/components/Features";
-import Hero from "@/components/Hero";
-import Testimonials from "@/components/Testimonials";
+import AboutSectionOne from "@/components/LayoutEN/About/AboutSectionOne";
+import AboutSectionTwo from "@/components/LayoutEN/About/AboutSectionTwo";
+import OurWorks from "@/components/LayoutEN/OurWorks";
+import Brands from "@/components/LayoutEN/Brands";
+import ScrollUp from "@/components/LayoutEN/Common/ScrollUp";
+import AboutSectionThree from "@/components/LayoutEN/About/AboutSectionOneThree";
+import ContactHome from "@/components/LayoutEN/ContactHome";
+import Features from "@/components/LayoutEN/Features";
+import Hero from "@/components/LayoutEN/HeroEn";
+import Testimonials from "@/components/LayoutEN/Testimonials";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "DATALYS Consulting",
-  description: "La page d'accueil de DATALYS Consulting",
+  description: "DATALYS Consulting home page",
   // other metadata
 };
 
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <ScrollUp />
       <Hero />
-      <AboutSectionTwo />
+      <AboutSectionThree />
+      {/* <AboutSectionTwo /> */}
       <AboutSectionOne />
       <Features />
       <OurWorks />
-      <Testimonials />
-      <Brands />
+      {/* <Testimonials /> */}
+      {/* <Brands /> */}
       <ContactHome />
     </>
   );

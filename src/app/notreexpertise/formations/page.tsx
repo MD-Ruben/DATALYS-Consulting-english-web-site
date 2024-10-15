@@ -1,13 +1,16 @@
-import ModuleFormations from "@/components/ModuleFormations";
-import Breadcrumb from "@/components/Common/Breadcrumb";
+import Footer from "@/components/LayoutEN/Footer";
+import Header from "@/components/LayoutEN/Header";
+import ScrollToTop from "@/components/LayoutEN/ScrollToTop";
+import ModuleFormations from "@/components/LayoutEN/ModuleFormations";
+import Breadcrumb from "@/components/LayoutEN/Common/Breadcrumb";
 
 import { Metadata } from "next";
-import AboutFormations from "@/components/AboutFormations";
-import DomainFormations from "@/components/DomainFormations";
+import AboutFormations from "@/components/LayoutEN/AboutFormations";
+import DomainFormations from "@/components/LayoutEN/DomainFormations";
 
 export const metadata: Metadata = {
-  title: "Formations | DATALYS Consulting",
-  description: "La page de formation de DATALYS Consulting",
+  title: "Training courses | DATALYS Consulting",
+  description: "DATALYS Consulting training courses page",
   // other metadata
 };
 
@@ -15,8 +18,8 @@ const AboutPage = () => {
   return (
     <>
       <Breadcrumb
-        pageName="Formation"
-        description="Infrastructure et analyse des données. Envisager de manière synergique des catalyseurs de changement ayant un impact sur les infrastructures flexibles."
+        pageName="Training courses"
+        description="Data infrastructure and analysis. Synergistically consider catalysts for change with an impact on flexible infrastructures."
       />
       <AboutFormations />
       <DomainFormations />

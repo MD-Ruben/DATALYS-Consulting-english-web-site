@@ -1,11 +1,14 @@
-import PageNotFound from "@/components/PageNotFound";
-import Breadcrumb from "@/components/Common/Breadcrumb";
+import Footer from "@/components/LayoutEN/Footer";
+import Header from "@/components/LayoutEN/Header";
+import ScrollToTop from "@/components/LayoutEN/ScrollToTop";
+import PageNotFound from "@/components/LayoutEN/PageNotFound";
+import Breadcrumb from "@/components/LayoutEN/Common/Breadcrumb";
 
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Espace entreprise | DATALYS Consulting",
-  description: "La page espace entreprise de DATALYS Consulting",
+  title: "Corporate area | DATALYS Consulting",
+  description: "DATALYS Consulting's corporate page",
   // other metadata
 };
 
@@ -13,8 +16,8 @@ const Page = () => {
   return (
     <>
       <Breadcrumb
-        pageName="Espace entreprise"
-        description="Infrastructure et analyse des données. Envisager de manière synergique des catalyseurs de changement ayant un impact sur les infrastructures flexibles."
+        pageName="Corporate area"
+        description="Data infrastructure and analysis. Synergistically consider catalysts for change with an impact on flexible infrastructures."
       />
       <PageNotFound />
     </>

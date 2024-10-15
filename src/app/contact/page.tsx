@@ -1,5 +1,8 @@
-import Breadcrumb from "@/components/Common/Breadcrumb";
-import Contact from "@/components/Contact";
+import Footer from "@/components/LayoutEN/Footer";
+import Header from "@/components/LayoutEN/Header";
+import ScrollToTop from "@/components/LayoutEN/ScrollToTop";
+import Breadcrumb from "@/components/LayoutEN/Common/Breadcrumb";
+import Contact from "@/components/LayoutEN/Contact";
 
 import { Metadata } from "next";
 
@@ -14,7 +17,7 @@ const ContactPage = () => {
     <>
       <Breadcrumb
         pageName="Contact"
-        description="Infrastructure et analyse des données. Envisager de manière synergique des catalyseurs de changement ayant un impact sur les infrastructures flexibles."
+        description="Data infrastructure and analysis. Synergistically consider catalysts for change with an impact on flexible infrastructures."
       />
 
       <Contact />
