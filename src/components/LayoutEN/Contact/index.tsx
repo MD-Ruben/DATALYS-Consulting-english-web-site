@@ -9,15 +9,12 @@ const Contact = () => {
     register,
     handleSubmit,
     reset,
-    watch,
-    control,
-    setValue,
     formState: { errors, isSubmitSuccessful, isSubmitting },
   } = useForm({
     mode: "onTouched",
   })
   const [isSuccess, setIsSuccess] = useState(false)
-  const [message, setMessage] = useState(false)
+  const [message, setMessage] = useState("")
 
   // Please update the Access Key in the .env
   const apiKey =
@@ -31,17 +28,20 @@ const Contact = () => {
     },
     onSuccess: (msg, data) => {
       setIsSuccess(true)
-      setMessage(msg)
+      setMessage("Message sent successfully.")
       reset()
     },
     onError: (msg, data) => {
       setIsSuccess(false)
-      setMessage(msg)
+      setMessage("Un problème s'est produit. Veuillez réessayer plus tard.")
     },
   })
 
   return (
-    <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28 mt-[45px] md:mt-[175px]">
+    <section
+      id="contact"
+      className="mt-[45px] overflow-hidden py-16 md:mt-[175px] md:py-20 lg:py-28"
+    >
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
@@ -114,6 +114,37 @@ const Contact = () => {
                       {errors.email && (
                         <div className="mt-1 text-red-600">
                           <small>{errors.email.message}</small>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+
+                  <div className="w-full px-4">
+                    <div className="mb-5">
+                      <label htmlFor="number" className="sr-only">
+                        Mobile phone
+                      </label>
+                      <input
+                        id="number"
+                        type="tel"
+                        placeholder="Mobile phone"
+                        autoComplete="off"
+                        className={`w-full rounded-md border-2 px-4 py-3 outline-none placeholder:text-primary focus:ring-4 dark:bg-gray-900 dark:text-white   dark:placeholder:text-gray-200 ${
+                          errors.number
+                            ? "border-red-600 ring-red-100 focus:border-red-600 dark:ring-0"
+                            : "border-gray-300 ring-gray-100 focus:border-gray-600 dark:border-gray-600 dark:ring-0 dark:focus:border-primary"
+                        }`}
+                        {...register("number", {
+                          required: "Please enter your phone number",
+                          pattern: {
+                            value: /^\+?[1-9]\d{1,14}$/,
+                            message: "Please enter a valid phone number",
+                          },
+                        })}
+                      />
+                      {errors.number && (
+                        <div className="mt-1 text-red-600">
+                          <small>{errors.number.message}</small>
                         </div>
                       )}
                     </div>
