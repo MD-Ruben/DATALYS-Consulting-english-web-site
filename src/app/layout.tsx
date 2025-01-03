@@ -5,23 +5,29 @@ import { AnimatePresence } from "framer-motion"
 import ScrollToTop from "@/components/LayoutEN/ScrollToTop"
 import "../styles/index.css"
 import PageTransition from "@/components/LayoutEN/Transitions/PageTransition"
+import { usePathname } from 'next/navigation';
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+  const pathname = usePathname();
+  const isEspaceEntreprise = pathname === '/espace-entreprise';
+
   return (
     <html suppressHydrationWarning lang="en" className="dark">
       <head />
 
       <body className="bg-black">
-        <Header />
+        {!isEspaceEntreprise && <Header />}
         <AnimatePresence mode="wait">
-          <PageTransition>{children}</PageTransition>
+          <PageTransition>
+            {children}
+          </PageTransition>
         </AnimatePresence>
-        <Footer />
-        <ScrollToTop />
+        {!isEspaceEntreprise && <Footer />}
+        {!isEspaceEntreprise && <ScrollToTop />}
       </body>
     </html>
   )

@@ -4,6 +4,7 @@ import OurWorks from "@/components/LayoutEN/OurWorks";
 import Brands from "@/components/LayoutEN/Brands";
 import ScrollUp from "@/components/LayoutEN/Common/ScrollUp";
 import AboutSectionThree from "@/components/LayoutEN/About/AboutSectionOneThree";
+import Heroo from "@/components/LayoutEN/Heroo";
 import Features from "@/components/LayoutEN/Features";
 import Hero from "@/components/LayoutEN/HeroEn";
 import Testimonials from "@/components/LayoutEN/Testimonials";
@@ -19,7 +20,8 @@ export default function HomePage() {
   return (
     <>
       <ScrollUp />
-      <Hero />
+      {/* <Hero /> */}
+      <Heroo />
       <AboutSectionThree />
       <Features />
       {/* <AboutSectionOne /> */}

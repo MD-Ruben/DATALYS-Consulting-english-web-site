@@ -117,29 +117,16 @@ const AboutSectionThree = () => {
                 whileInView={{ y: 0, opacity: 1 }}
                 viewport={{ once: false }}
                 transition={{ delay: 0.8, duration: 0.5 }}
-                className="mt-4 flex items-center"
+                className="mt-4 flex items-center justify-start gap-2 space-y-4 sm:flex-row sm:space-y-0"
               >
-                <Button
-                  as={Link}
-                  href="/apropos"
-                  className="flex items-center justify-center rounded-xl border-2 dark:border-body-color-dark"
-                >
-                  <span className="text-sm sm:text-base md:text-lg dark:text-slate-300">
-                    Read more
-                  </span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="25"
-                    height="25"
-                    viewBox="0 0 24 24"
-                    className="ml-2"
+                <div>
+                  <Link
+                    href="/apropos"
+                    className="inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
                   >
-                    <path
-                      fill="#959CB1"
-                      d="m16.172 11l-5.364-5.364l1.414-1.414L20 12l-7.778 7.778l-1.414-1.414L16.172 13H4v-2z"
-                    />
-                  </svg>
-                </Button>
+                    Read more
+                  </Link>
+                </div>
               </motion.div>
             </div>
           </div>

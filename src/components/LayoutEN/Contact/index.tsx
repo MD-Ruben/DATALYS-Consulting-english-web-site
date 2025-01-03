@@ -40,7 +40,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="mt-[45px] overflow-hidden py-16 md:mt-[175px] md:py-20 lg:py-28"
+      className="mt-[45px] overflow-hidden py-16 md:mt-[105px] md:py-20 lg:py-28"
     >
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
