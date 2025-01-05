@@ -128,7 +128,7 @@ const Hero = () => {
                             .type("Cloud")
                             .pause(3500)
                             .delete(5)
-                            .pause(400)
+                            .pause(800)
                             .type("Data Center & Energy")
                             .pause(750)
                             .delete(20)
