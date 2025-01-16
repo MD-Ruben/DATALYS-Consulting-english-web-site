@@ -190,7 +190,7 @@ const Hero = () => {
                         <img
                           src={images[currentIndex].src}
                           alt={`Slider Image ${currentIndex + 1}`}
-                          className="h-full w-full cursor-pointer rounded-full transition-all duration-500 ease-in-out bg-[#2F5075] p-4 shadow-lg"
+                          className="h-full w-full cursor-pointer rounded-xl transition-all duration-500 ease-in-out p-4"
                         />
                       </div>
                       {/* <button

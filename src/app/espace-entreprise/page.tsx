@@ -1,3 +1,4 @@
+import CorporateEspace from "@/components/LayoutEN/CorporateEspace";
 import Espace from "@/components/LayoutEN/Espace";
 
 import { Metadata } from "next";
@@ -11,7 +12,8 @@ export const metadata: Metadata = {
 const EspacePage = () => {
   return (
     <>
-      <Espace />
+      {/* <Espace /> */}
+      <CorporateEspace />
     </>
   );
 };
