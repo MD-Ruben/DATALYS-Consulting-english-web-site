@@ -17,10 +17,10 @@ export const metadata: Metadata = {
 const AboutPage = () => {
   return (
     <>
-      {/* <Breadcrumb
+      <Breadcrumb
         pageName="Integration"
-        description="Data infrastructure and analysis. Synergistically consider catalysts for change with an impact on flexible infrastructures."
-      /> */}
+        // description="Data infrastructure and analysis. Synergistically consider catalysts for change with an impact on flexible infrastructures."
+      />
       <AboutIntegration />
       <NosIntegrations />
     </>

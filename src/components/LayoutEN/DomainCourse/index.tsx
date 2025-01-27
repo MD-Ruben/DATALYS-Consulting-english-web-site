@@ -9,7 +9,7 @@ import { useForm } from "react-hook-form"
 import useWeb3Forms from "@web3forms/react"
 
 const ArrowBox = () => (
-  <div className="mr-3 flex h-6 w-6 items-center justify-center rounded-md bg-primary/20">
+  <div className="mr-3 flex h-6 w-6 items-center justify-center rounded-md bg-yellow/20">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="16"
@@ -152,7 +152,7 @@ const Services = () => {
                         <h2 className="mb-4 mt-8 text-xl font-bold dark:text-primary sm:text-2xl lg:text-xl xl:text-2xl">
                           Our training courses
                         </h2>
-                        <div className="space-y-4 text-justify text-base font-light text-[#5793C7]">
+                        <div className="space-y-4 text-justify text-base font-light text-yellow">
 
                           <div className="flex items-start">
                             <ArrowBox />

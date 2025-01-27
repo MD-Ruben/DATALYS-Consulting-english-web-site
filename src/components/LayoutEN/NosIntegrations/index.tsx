@@ -22,7 +22,7 @@ const NosIntegrations = () => {
             whileInView={{ x: 0, opacity: 1 }}
             viewport={{ once: false }}
             transition={{ duration: 0.5 }}
-            className="font-Title mb-4 text-center text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px]"
+            className="font-Title mb-4 text-center text-3xl font-bold !leading-tight text-black dark:text-white sm:text-4xl md:text-[45px] -mr-0 md:-mr-[150px]"
           >
             What we integrate
           </motion.h2>

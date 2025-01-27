@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 import { useRef } from "react"
 
 const ArrowBox = () => (
-  <div className="mr-3 flex h-6 w-6 items-center justify-center rounded-md bg-primary/20">
+  <div className="mr-3 flex h-6 w-6 items-center justify-center rounded-md bg-yellow/20">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="16"
@@ -16,7 +16,7 @@ const ArrowBox = () => (
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="text-primary"
+      className="text-yellow"
     >
       <path d="M5 12h14" />
       <path d="m12 5 7 7-7 7" />
@@ -99,7 +99,7 @@ const Services = () => {
                       whileInView={{ opacity: 1 }}
                       viewport={{ once: false }}
                       transition={{ delay: 0.4, duration: 0.5 }}
-                      className="mb-1 mt-4 text-xl font-bold dark:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
+                      className="mb-7 mt-4 text-xl font-bold dark:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
                     >
                       For this purpose, we evaluate
                     </motion.h3>
@@ -110,7 +110,7 @@ const Services = () => {
                       transition={{ delay: 0.2, duration: 0.5 }}
                       className="pr-[10px]"
                     >
-                      <div className="mb-1 text-justify text-base font-light leading-relaxed text-[#5793C7] [word-spacing:-3.1px] md:[word-spacing:-1.8px] md:text-[17px]">
+                      <div className="mb-1 text-left text-base font-light leading-relaxed text-yellow [word-spacing:-3.1px] md:[word-spacing:-1.8px] md:text-[17px]">
                         <div className="space-y-4">
                           <div className="flex items-start">
                             <ArrowBox />
@@ -167,7 +167,7 @@ const Services = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="text-justify text-base font-light leading-relaxed text-[#5793C7] [word-spacing:-1.8px] md:text-[17px]">
+                      <div className="text-left font-light leading-relaxed text-yellow [word-spacing:-1.8px] md:text-[17px]">
                         <p>
                           Our main vocation is to provide all types of
                           information systems with the best practices and the
@@ -235,7 +235,7 @@ const Services = () => {
                       whileInView={{ opacity: 1 }}
                       viewport={{ once: false }}
                       transition={{ delay: 0.4, duration: 0.5 }}
-                      className="mb-1 mt-4 text-xl font-bold dark:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
+                      className="mb-7 mt-4 text-xl font-bold dark:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
                     >
                       Network audit
                     </motion.h3>
@@ -246,7 +246,7 @@ const Services = () => {
                       transition={{ delay: 0.2, duration: 0.5 }}
                       className="pr-[10px]"
                     >
-                      <div className="mb-1 text-base font-light text-[#5793C7]">
+                      <div className="mb-1 text-base font-light text-yellow">
                         <div className="space-y-4">
                           <div className="flex items-start">
                             <ArrowBox />
@@ -274,7 +274,7 @@ const Services = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="text-base font-light text-[#5793C7]">
+                      <div className="text-base font-light text-yellow mt-3">
                         <span className="my-1 font-bold">
                           IS security audit
                         </span>{" "}
@@ -323,7 +323,7 @@ const Services = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="mt-4 text-base font-light text-[#5793C7]">
+                      <div className="mt-4 text-base font-light text-yellow">
                         <span className="my-1 font-bold">
                           Governance and risk management audit
                         </span>{" "}
@@ -383,7 +383,7 @@ const Services = () => {
                       whileInView={{ opacity: 1 }}
                       viewport={{ once: false }}
                       transition={{ delay: 0.4, duration: 0.5 }}
-                      className="mb-1 mt-4 text-xl font-bold dark:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
+                      className="mb-7 mt-4 text-xl font-bold dark:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
                     >
                       Data Center Energy Management
                     </motion.h3>
@@ -394,7 +394,7 @@ const Services = () => {
                       transition={{ delay: 0.2, duration: 0.5 }}
                       className="pr-[10px]"
                     >
-                      <div className="mb-1 text-base font-light text-[#5793C7]">
+                      <div className="mb-1 text-left font-light text-yellow">
                         <div className="space-y-4">
                           <div className="flex items-start">
                             <ArrowBox />
@@ -418,7 +418,7 @@ const Services = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="mt-4 text-base font-light text-[#5793C7]">
+                      <div className="mt-4 text-left font-light text-yellow">
                         <span className="my-1 font-bold">
                         Systems Resilience Audit
                         </span>{" "}
@@ -443,7 +443,7 @@ const Services = () => {
                           </div>
                         </div>
                       </div>
-                      <div className="mt-4 text-justify text-base font-light text-[#5793C7]">
+                      <div className="mt-4 text-left text-base font-light text-yellow">
                         <span className="mb-4 font-bold">
                         Safety and Compliance Management
                         </span>{" "}

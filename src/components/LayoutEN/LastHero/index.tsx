@@ -8,7 +8,7 @@ const LastHero = () => {
   const slides = [
     {
       id: 1,
-      image: "/images/slider/Infra.jpg",
+      image: "/images/slider/new/infrastructure.jpg",
       title: "Welcome to",
       title2: "DATALYS",
       title3: "Infrastructure & Systems",
@@ -31,9 +31,9 @@ const LastHero = () => {
     },
     {
       id: 3,
-      image: "/images/slider/DC_Accueil.jpg",
+      image: "/images/slider/new/datacenter1.jpg",
       title2: "DATALYS",
-      title3: "Data Center & Energy",
+      title3: "Data Center",
       description: "Today, data is a growth driver for many companies.",
       buttons: [
         { text: "Talk to an expert", link: "/contact" },
@@ -41,8 +41,19 @@ const LastHero = () => {
       ]
     },
     {
-        id: 4,
-        image: "/images/slider/Reseau_Accueil.jpg",
+      id: 4,
+      image: "/images/slider/new/energie.jpg",
+      title2: "DATALYS",
+      title3: "Energy",
+      description: "Today, data is a growth driver for many companies.",
+      buttons: [
+        { text: "Talk to an expert", link: "/contact" },
+        { text: "Ask for a quote", link: "/contact" }
+      ]
+    },
+    {
+        id: 5,
+        image: "/images/slider/new/reseau&securite2.jpg",
         title2: "DATALYS",
       title3: "Network & Security",
         description: "Today, data is a growth driver for many companies.",

@@ -17,10 +17,10 @@ export const metadata: Metadata = {
 const AboutPage = () => {
   return (
     <>
-      {/* <Breadcrumb
+      <Breadcrumb
         pageName="Training courses"
-        description="Data infrastructure and analysis. Synergistically consider catalysts for change with an impact on flexible infrastructures."
-      /> */}
+        // description="Data infrastructure and analysis. Synergistically consider catalysts for change with an impact on flexible infrastructures."
+      />
       <AboutFormations />
       <DomainCourse />
       {/* <ModuleFormations /> */}
