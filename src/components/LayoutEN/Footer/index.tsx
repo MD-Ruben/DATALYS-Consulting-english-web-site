@@ -92,7 +92,7 @@ const Footer = () => {
                       href="/contact"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Subsidiary <span className="uppercase">Guinea </span>:
+                      Subsidiary <span className="uppercase">Guinea Conakry</span>:
                       Almamyah Street 028 N°466 COMMUNE DE KALOUM
                     </Link>
                   </li>

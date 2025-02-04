@@ -8,12 +8,12 @@ const AboutFormations = () => {
   const scrollRef = useRef<HTMLDivElement>(null)
 
   return (
-    <section className="pt-16 md:pt-20 lg:pt-28 mt-[45px] md:-mt-[105px]">
+    <section className="pt-16 md:pt-20 lg:pt-28 mt-[45px] md:-mt-[105px] lg:-mt-[125px]">
       <div className="container">
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
-          <div className="-mx-4 flex flex-wrap items-center">
+          <div className="-mx-4 flex flex-wrap items-center -mt-0 lg:-mt-7">
             <div
-              className="font-Title w-full px-4 text-start lg:w-1/2"
+              className="font-Title w-full px-4 text-start -mt-0 lg:-mt-10 lg:w-1/2 mb-10 lg:mb-0"
               ref={scrollRef}
             >
               {/* <div className="absolute bottom-20 hidden w-full px-4 md:block">
@@ -72,13 +72,13 @@ const AboutFormations = () => {
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
-                className="relative mx-auto max-w-[600px] rounded-full bg-[#294666] p-6 shadow-lg"
+                className="relative mx-auto max-w-[550px] rounded-full bg-[#294666] p-2 shadow-lg"
               >
-                <img
-                  src="/images/about/training.png"
-                  alt="About Us Image"
-                  // width={500}
-                  // height={500}
+                <Image
+                  src="/images/formations/formations.jpeg"
+                  alt="Formations Image"
+                  width={600}
+                  height={600}
                   className="rounded-full object-cover"
                 />
               </motion.div>

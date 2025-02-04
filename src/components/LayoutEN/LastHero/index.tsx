@@ -12,7 +12,7 @@ const LastHero = () => {
       title: "Welcome to",
       title2: "DATALYS",
       title3: "Infrastructure & Systems",
-      description: "Today, data is a growth driver for many companies.",
+      description: "Revitalize your System Infrastructure, identify crucial optimization points.",
       buttons: [
         { text: "Talk to an expert", link: "/contact" },
         { text: "Ask for a quote", link: "/contact" },
@@ -23,7 +23,7 @@ const LastHero = () => {
       image: "/images/slider/Cloud_Accueil.PNG",
       title2: "DATALYS",
       title3: "Cloud",
-      description: "Today, data is a growth driver for many companies.",
+      description: "Benefit from your investment in the Cloud. Control your invoices, simplify your Cloud migrations.",
       buttons: [
         { text: "Talk to an expert", link: "/contact" },
         { text: "Ask for a quote", link: "/contact" },
@@ -34,7 +34,7 @@ const LastHero = () => {
       image: "/images/slider/new/datacenter1.jpg",
       title2: "DATALYS",
       title3: "Data Center",
-      description: "Today, data is a growth driver for many companies.",
+      description: "Opt for an urbanized, perfectly structured data center to guarantee IS performance and security.",
       buttons: [
         { text: "Talk to an expert", link: "/contact" },
         { text: "Ask for a quote", link: "/contact" },
@@ -45,7 +45,7 @@ const LastHero = () => {
       image: "/images/slider/new/energie.jpg",
       title2: "DATALYS",
       title3: "Energy",
-      description: "Today, data is a growth driver for many companies.",
+      description: "Reduce your energy costs by choosing standardized energy solutions",
       buttons: [
         { text: "Talk to an expert", link: "/contact" },
         { text: "Ask for a quote", link: "/contact" },
@@ -56,7 +56,7 @@ const LastHero = () => {
       image: "/images/slider/new/reseau&securite2.jpg",
       title2: "DATALYS",
       title3: "Network & Security",
-      description: "Today, data is a growth driver for many companies.",
+      description: "The security of your information system is its most important link. Clarify your architectures, optimize your security rules and facilitate network administration.",
       buttons: [
         { text: "Talk to an expert", link: "/contact" },
         { text: "Ask for a quote", link: "/contact" },
@@ -149,7 +149,7 @@ const LastHero = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.5 }}
-                  className="mb-9 text-base font-extralight !leading-relaxed dark:text-white sm:text-lg md:text-xl"
+                  className="mb-9 text-base font-extralight text-center !leading-relaxed dark:text-white sm:text-lg md:text-xl"
                 >
                   {slides[currentIndex].description}
                 </motion.p>

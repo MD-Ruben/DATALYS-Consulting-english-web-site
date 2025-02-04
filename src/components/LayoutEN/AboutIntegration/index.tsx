@@ -13,7 +13,7 @@ const AboutIntegration = () => {
       <div className="container">
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
           <div className="-mx-4 flex flex-wrap items-center">
-            <div className="font-Title w-full px-4 text-start lg:w-1/2" ref={scrollRef}>
+            <div className="font-Title w-full px-4 text-start lg:w-1/2 mb-10 lg:mb-0" ref={scrollRef}>
               {/* <div className="absolute bottom-40 hidden w-full px-4 md:block">
                 <div className="mx-auto max-w-[700px]">
                   <img
@@ -35,7 +35,7 @@ const AboutIntegration = () => {
                 services after implementation, ensuring that they are
                 meticulously configured to your specific requirements. Our
                 services cover a broad spectrum, including the integration of
-                infrastructure solutions for systems, networks and security, as
+                infrastructures solutions for system, networks and security, as
                 well as energy, datacenters and the cloud.
               </motion.p>
 
@@ -79,16 +79,6 @@ const AboutIntegration = () => {
                 create a powerful and effective market presence that takes your
                 business to new heights.
               </motion.p>
-
-              
-              <p className="mt-2 text-start text-base !leading-relaxed font-light text-slate-300 md:text-lg">
-                <Link href="/contact" className="text-primary">
-                  Contact us
-                </Link>{" "}
-                today to discuss your integration project. <Link href="/contact" className="text-primary mx-2">
-                  ASK FOR A QUOTE
-                </Link>
-              </p>
             </div>
 
             <div className="w-full px-4 lg:mr-0 lg:w-1/2" ref={scrollRef}>
@@ -96,13 +86,13 @@ const AboutIntegration = () => {
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5 }}
-                className="relative mx-auto p-6 max-w-[600px] rounded-full bg-[#294666] shadow-lg"
+                className="relative mx-auto p-2 max-w-[550px] rounded-full bg-[#294666] shadow-lg"
               >
-                <img
-                  src="/images/about/arrows.png"
-                  alt="About Us Image"
-                  // width={500}
-                  // height={500}
+                <Image
+                  src="/images/integration/aaabout_integration.jpeg"
+                  alt="Integration Image"
+                  width={600}
+                  height={600}
                   className="rounded-full object-cover"
                 />
               </motion.div>

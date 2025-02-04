@@ -3,6 +3,7 @@
 import { useRef } from "react"
 import SectionTitle from "../Common/SectionTitle"
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 const checkIcon = (
   <svg width="16" height="13" viewBox="0 0 16 13" className="fill-current">
@@ -28,7 +29,7 @@ const AboutSectionFour = () => {
         <div className="border-b border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28">
           <div className="-mx-4 flex flex-wrap items-center">
             <div
-              className="font-Title w-full px-4 text-start lg:w-1/2"
+              className="font-Title w-full px-4 text-start lg:w-1/2 mb-10 lg:mb-0"
               ref={scrollRef}
             >
               {/* <div className="absolute bottom-40 hidden w-full px-4 md:block">
@@ -50,7 +51,7 @@ const AboutSectionFour = () => {
                 Founded in 2023, by committed Consultants with a passion for
                 Digitization, Datalys Consulting is an IT Service Company that
                 brings reinvented expertise. We specialize in Cloud, IT
-                Infrastructure and Networks & Security: the key topics impacting
+                Infrastructure and networks & securities: the key topics impacting
                 the world of IT and Digitization. The transformation and
                 management of IT & Cloud infrastructures, the energy
                 optimization of Data Centers and the efficient deployment of IT
@@ -69,7 +70,7 @@ const AboutSectionFour = () => {
               >
                 Our dedicated team works tirelessly to design reliable,
                 high-performance and eco-responsible IT environments. Drawing on
-                our expertise in cloud, energy and networks & security, we
+                our expertise in cloud, energy and networks & securities, we
                 reinvent our expertise to tailor it to your specific needs. At
                 DATALYS, innovation is at the heart of our DNA. We offer our
                 customers next-generation solutions and best practices to give
@@ -100,13 +101,13 @@ const AboutSectionFour = () => {
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: false }}
                 transition={{ delay: 0.2, duration: 0.5 }}
-                className="relative mx-auto max-w-[600px] rounded-full bg-[#294666] p-4 shadow-lg"
+                className="relative mx-auto max-w-[550px] rounded-full bg-[#294666] p-2 shadow-lg"
               >
-                <img
-                  src="/images/about/pexels.jpg"
+                <Image
+                  src="/images/about/pppexels.jpg"
                   alt="About Us Image"
-                  // width={500}
-                  // height={500}
+                  width={600}
+                  height={600}
                   className="rounded-full object-cover"
                 />
               </motion.div>
