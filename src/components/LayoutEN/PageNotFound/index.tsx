@@ -55,16 +55,17 @@ const PageNotFound = () => {
 
   return (
     <main className="min-h-screen mt-10 md:-mt-6">
-      <div className="container mx-auto px-4 py-20">
+      <div className="container mx-auto px-4 py-16">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
+            className="mb-16"
           >
-            <h2 className="text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-[#f5c034] bg-clip-text text-transparent">
+            {/* <h2 className="text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-[#f5c034] bg-clip-text text-transparent">
               404
-            </h2>
+            </h2> */}
             <h3 className="text-2xl lg:text-4xl font-semibold text-gray-700 dark:text-gray-300 mb-8">
             Coming soon
             </h3>

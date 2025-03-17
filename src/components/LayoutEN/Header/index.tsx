@@ -119,7 +119,8 @@ const Header = () => {
                             target={menuItem.newTab ? "_blank" : "_self"}
                             rel={menuItem.newTab ? "noopener noreferrer" : ""}
                             className={`font-title flex py-2 text-sm font-semibold lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 lg:text-[15px] ${
-                              usePathName === menuItem.path
+                              usePathName === menuItem.path || 
+                              (menuItem.path !== "/" && usePathName.startsWith(menuItem.path))
                                 ? "text-primary dark:text-[#f5c034]"
                                 : menuItem.title === "Our Expertise" && isExpertisePage()
                                 ? "text-[#f5c034]"
@@ -159,7 +160,11 @@ const Header = () => {
                                 <Link
                                   href={submenuItem.path}
                                   key={index}
-                                  className="font-title block rounded py-2.5 text-sm font-semibold text-dark hover:text-primary dark:text-white/70 dark:hover:text-white lg:px-3"
+                                  className={`font-title block rounded py-2.5 text-sm font-semibold ${
+                                    usePathName === submenuItem.path
+                                      ? "text-[#f5c034]"
+                                      : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
+                                  } lg:px-3`}
                                 >
                                   {submenuItem.title}
                                 </Link>

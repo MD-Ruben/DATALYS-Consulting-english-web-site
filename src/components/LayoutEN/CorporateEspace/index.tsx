@@ -2,10 +2,55 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const CorporateEspace = () => {
   return (
     <div className="relative min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 overflow-hidden">
+      {/* Back to Home Button */}
+      <div className="relative z-20 container mx-auto px-4 pt-8 -mb-16">
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <Link href="/" className="inline-flex items-center px-4 py-2 bg-[#f5c034]/20 rounded-lg text-white hover:bg-[#f5c034]/30 hover:text-white transition-colors duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+            </svg>
+            Back to home
+          </Link>
+        </motion.div>
+      </div>
+      
+      {/* <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="absolute top-6 left-6 z-20"
+      >
+        <Link 
+          href="/" 
+          className="flex items-center gap-2 bg-[#f5c034] px-4 py-2 rounded-full hover:bg-[#f5c034]/80 transition-all duration-300 shadow-lg"
+        >
+          <svg
+            className="w-5 h-5 text-white"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M10 19l-7-7m0 0l7-7m-7 7h18"
+            />
+          </svg>
+          <span className="text-white font-medium">Back to Home</span>
+        </Link>
+      </motion.div> */}
+
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute w-full h-full">
